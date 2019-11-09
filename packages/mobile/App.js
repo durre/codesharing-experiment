@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { MESSAGE } from './constant'
+import { MESSAGE } from 'shared'
 
 export default function App() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MESSAGE } from './constant'
+import { MESSAGE } from 'shared'
 
 function App() {
   return (

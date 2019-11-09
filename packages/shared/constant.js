@@ -1,1 +1,1 @@
-export const MESSAGE = "Hello Lerna!"
+export const MESSAGE = "Hello Lerna2!"

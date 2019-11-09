@@ -2,26 +2,24 @@
 
 We have two projects in this repo under the folders *mobile* and *webapp*. Both have the file `constant.js` with a message that both apps need to display. Wouldn't it be great if this file can be shared and not copy pasted between the projects?
 
-## Start both projects
+## Lerna
+
+Steps taken
 
 ```
-./start.sh
+lerna init
+mv mobile packages
+mv webapp packages
+mkdir packages/shared
+cd packages/shared
+yarn init
 ```
 
-## Things to consider
+Move the constant to the shared project and then run the following in the root directory:
 
-- What if one project makes a breaking change that the other project is not ready for. Do we need versioning?
-- Productivity. Most likely the developer will be working on both the shared code & the app code at the same time. Should be as smooth as if the the shared code was in the app project.
- 
-## Options
+```
+lerna add shared --scope=webapp
+lerna add shared --scope=mobile
+```
 
-### Copy / paste
-No.
-
-### Actual npm packages
-
-### yarn/npm link
-
-### Lerna
-
-### Other options...
+If we now import the constant from the shared project and start both mobile & webapp we can see that changes in the shared project are directly seen in both mobile & web.
