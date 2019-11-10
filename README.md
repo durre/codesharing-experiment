@@ -27,3 +27,7 @@ If we now import the constant from the shared project and start both mobile & we
 ```
 lerna publish
 ```
+
+## Conclusion
+
+Lerna only seems to create a symlink. As far as I can tell it's suited for projects that consist of many smaller projects that are released together. However in this case where we have one shared package, two clients that use this shared package it doesn't have a solution for versioning the shared package and have different clients use different versions. Not sure if that's a hard requirement anyway, but that's my conclusion. 
