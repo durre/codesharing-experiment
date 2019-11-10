@@ -1,6 +1,8 @@
 {
   "name": "shared",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "1fbff8e195341d9172d78891b970183b0e286b51"
 }

@@ -23,3 +23,7 @@ lerna add shared --scope=mobile
 ```
 
 If we now import the constant from the shared project and start both mobile & webapp we can see that changes in the shared project are directly seen in both mobile & web.
+
+```
+lerna publish
+```
